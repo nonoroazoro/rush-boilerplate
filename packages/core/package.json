@@ -1,0 +1,31 @@
+{
+    "name": "core",
+    "version": "1.0.0",
+    "description": "The core package.",
+    "main": "./dist/lib/index.js",
+    "module": "./dist/es/index.js",
+    "types": "./dist/types/index.d.ts",
+    "scripts": {
+        "build": "npm run build:umd && npm run build:es && npm run build:lib && npm run build:types",
+        "build:umd": "vite build",
+        "build:es": "tsc --project ./tsconfig.es.json",
+        "build:lib": "tsc --project ./tsconfig.lib.json",
+        "build:types": "tsc --project ./tsconfig.types.json"
+    },
+    "dependencies": {
+        "uuid": "^10.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^22.5.3",
+        "@types/uuid": "^10.0.0",
+        "typescript": "^5.5.4",
+        "vite": "^5.4.3"
+    },
+    "files": [
+        "dist"
+    ],
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org"
+    }
+}

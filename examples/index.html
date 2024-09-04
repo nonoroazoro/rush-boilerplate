@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no, viewport-fit=cover" />
+    <title>rush-boilerplate</title>
+    <style>
+      body {
+        font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+        color: #333;
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a {
+        color: #eb4986;
+      }
+
+      a:hover,
+      a:active {
+        text-decoration: none;
+      }
+
+      .ul-reset {
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        list-style: none;
+      }
+
+      .header {
+        display: flex;
+        justify-content: center;
+      }
+
+      .navigation {
+        background-color: #eee;
+        font-weight: 700;
+      }
+
+      .navigation-list {
+        font-size: 0;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+
+        display: flex;
+        justify-content: center;
+      }
+
+      .navigation-item {
+        font-size: 1.2rem;
+      }
+
+      .navigation-link {
+        display: block;
+        position: relative;
+        padding: 5px 20px;
+        text-decoration: none;
+        color: #333;
+        transition: color .2s ease-in-out;
+        -webkit-transition: color .2s ease-in-out;
+      }
+
+      .navigation-link:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        border-bottom: solid 2px;
+      }
+
+      .navigation-link:before {
+        left: 0;
+      }
+
+      .navigation-link:hover {
+        color: #eb4986;
+      }
+
+      .navigation-link:hover:before {
+        width: 100%;
+      }
+
+      .navigation-link:before {
+        transition: width .2s ease-in-out;
+        -webkit-transition: width .2s ease-in-out;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>
+        <a class="navigation-link" target="_blank" href="https://github.com/nonoroazoro/rush-boilerplate">
+          Rush Boilerplate
+        </a>
+      </h1>
+    </div>
+    <nav class="navigation">
+      <ul class="navigation-list ul-reset">
+        <li class="navigation-item">
+          <a href="./demo/" class="navigation-link">
+            Demo
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+
+</html>
