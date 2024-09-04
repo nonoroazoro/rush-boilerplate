@@ -1,0 +1,37 @@
+{
+    "name": "rush-boilerplate",
+    "version": "1.0.0",
+    "description": "Minimal example for Rush.",
+    "license": "MIT",
+    "private": true,
+    "author": {
+        "email": "xiaochao.k@gmail.com",
+        "name": "nonoroazoro",
+        "url": "https://github.com/nonoroazoro"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nonoroazoro/rush-boilerplate"
+    },
+    "homepage": "https://github.com/nonoroazoro/rush-boilerplate",
+    "bugs": {
+        "url": "https://github.com/nonoroazoro/rush-boilerplate/issues"
+    },
+    "keywords": [
+        "boilerplate",
+        "rush",
+        "typescript",
+        "monorepo"
+    ],
+    "scripts": {
+        "start": "npm run dev",
+        "dev": "vite",
+        "build": "rush build"
+    },
+    "devDependencies": {
+        "less": "^4.2.0",
+        "typescript": "^5.5.4",
+        "vite-tsconfig-paths": "^5.0.1",
+        "vite": "^5.4.3"
+    }
+}
