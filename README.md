@@ -15,3 +15,9 @@
     ```bash
     npm start
     ```
+
+1. Build.
+
+    ```bash
+    npm run build
+    ```
